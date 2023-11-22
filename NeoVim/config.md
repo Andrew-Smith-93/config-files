@@ -38,7 +38,7 @@ This document outlines the key mappings set up in a Neovim configuration for var
 - **Splitting Windows**
   - `<Ctrl-h>`: Splits the window horizontally.
   - `<Ctrl-v>`: Splits the window vertically.
-  - `<Ctrl-t>`: Opens a new tab.
+  - `<Ctrl-n>`: Opens a new tab.
 
 - **Navigation Between Splits**
   - `<Ctrl-j>`: Moves to the window below.
