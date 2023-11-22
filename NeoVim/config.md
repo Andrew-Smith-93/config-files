@@ -14,8 +14,6 @@ This document outlines the key mappings set up in a Neovim configuration for var
 
 - **Focus on NERDTree**
   - `<Ctrl-f>`: Focuses the NERDTree panel.
-- **Open NERDTree**
-  - `<Ctrl-n>`: Opens NERDTree.
 - **Toggle NERDTree**
   - `<Ctrl-m>`: Toggles NERDTree open/closed.
 

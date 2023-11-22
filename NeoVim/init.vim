@@ -27,7 +27,6 @@ set cursorline
 
 " NERDTree Mappings
 nnoremap <C-f> :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-m> :NERDTreeToggle<CR>
 
 " Disable Arrow Keys in Normal Mode
@@ -42,7 +41,7 @@ nnoremap <F5> :w<CR>:!gcc % -o %< && ./%<<CR>
 " Window Splitting Mappings
 nnoremap <C-h> :split<CR>
 nnoremap <C-v> :vsplit<CR>
-nnoremap <C-t> :tabnew<CR>
+nnoremap <C-n> :tabnew<CR>
 
 " Navigation in Splits
 nnoremap <C-j> <C-W>j
