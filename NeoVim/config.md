@@ -1,6 +1,6 @@
 # Neovim Key Mappings Guide
 
-This document outlines the key mappings set up in a Neovim configuration for various functionalities
+This document outlines the key mappings set up in a Neovim configuration for various functionalities.
 
 ## General Settings
 
