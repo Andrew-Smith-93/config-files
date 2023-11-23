@@ -1,7 +1,6 @@
 " Enable line numbers
 set number
 set relativenumber
-
 " Initialize Plugin Manager
 call plug#begin()
 
@@ -11,6 +10,7 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'vim-airline/vim-airline'
 Plug 'github/copilot.vim'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ThePrimeagen/vim-be-good'
 
 " End Plugin Initialization
 call plug#end()
@@ -24,6 +24,21 @@ set smartindent
 set smarttab
 set autoindent
 set cursorline
+
+" Airline Configuration
+colorscheme jellybeans
+set background=dark
+
+let g:airline_powerline_fonts = 1
+let g:airline_theme='jellybeans'
+
+" Transparent Background
+hi Normal guibg=NONE ctermbg=NONE
+hi LineNr guibg=NONE ctermbg=NONE
+hi Folded guibg=NONE ctermbg=NONE
+hi NonText guibg=NONE ctermbg=NONE
+hi SpecialKey guibg=NONE ctermbg=NONE
+hi VertSplit guibg=NONE ctermbg=NONE
 
 " NERDTree Mappings
 nnoremap <C-f> :NERDTreeFocus<CR>
@@ -64,13 +79,6 @@ inoremap <Right> <Nop>
 " Terminal Mappings
 tnoremap <Esc> <C-\><C-n>
 nnoremap <C-t> :terminal<CR>
-
-" Airline Configuration
-colorscheme jellybeans
-set background=dark
-
-let g:airline_powerline_fonts = 1
-let g:airline_theme='jellybeans'
 
 " NERDTree Configuration
 let g:NERDTreeDirArrowExpandable="+" 
