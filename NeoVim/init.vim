@@ -2,6 +2,7 @@
 set number
 set relativenumber
 " Initialize Plugin Manager
+
 call plug#begin()
 
 " Plugin Definitions
@@ -24,7 +25,7 @@ set smartindent
 set smarttab
 set autoindent
 set cursorline
-
+set showmatch
 " Airline Configuration
 colorscheme jellybeans
 set background=dark
@@ -41,8 +42,7 @@ hi SpecialKey guibg=NONE ctermbg=NONE
 hi VertSplit guibg=NONE ctermbg=NONE
 
 " NERDTree Mappings
-nnoremap <C-f> :NERDTreeFocus<CR>
-nnoremap <C-m> :NERDTreeToggle<CR>
+nnoremap <TAB> :NERDTreeToggle<CR>
 
 " Disable Arrow Keys in Normal Mode
 noremap <Up> <Nop>
@@ -54,9 +54,8 @@ noremap <Right> <Nop>
 nnoremap <F5> :w<CR>:!gcc % -o %< && ./%<<CR>
 
 " Window Splitting Mappings
-nnoremap <C-h> :split<CR>
-nnoremap <C-v> :vsplit<CR>
-nnoremap <C-n> :tabnew<CR>
+nnoremap <F3> :vsplit<CR>
+noremap <F4> :tabnew<CR>
 
 " Navigation in Splits
 nnoremap <C-j> <C-W>j
