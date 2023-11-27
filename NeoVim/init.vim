@@ -45,23 +45,25 @@ hi VertSplit guibg=NONE ctermbg=NONE
 nnoremap <TAB> :NERDTreeToggle<CR>
 
 " Disable Arrow Keys in Normal Mode
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
+" noremap <Up> <Nop>
+" noremap <Down> <Nop>
+" noremap <Left> <Nop>
+" noremap <Right> <Nop>
 
 " Compile and Run Shortcut
-nnoremap <F5> :w<CR>:!gcc % -o %< && ./%<<CR>
+nnoremap <F5> :w<CR>:!g++ % -o %< && echo 'Compilation Successful'<CR>
 
 " Window Splitting Mappings
-nnoremap <F3> :vsplit<CR>
+nnoremap <F2> :split<CR>
+nnoremap <F3> :terminal<CR>
 noremap <F4> :tabnew<CR>
+nnoremap <F6> :vsplit<CR>
 
 " Navigation in Splits
-nnoremap <C-j> <C-W>j
-nnoremap <C-k> <C-W>k
-nnoremap <C-l> <C-W>l
-nnoremap <C-h> <C-W>h
+nnoremap <Up> <C-W>k
+nnoremap <Down> <C-W>j
+nnoremap <Left> <C-W>h
+nnoremap <Right> <C-W>l
 
 " Resize Splits
 nnoremap <C-Up> :resize +2<CR>
