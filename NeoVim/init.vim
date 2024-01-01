@@ -1,8 +1,8 @@
 " Enable line numbers
 set number
 set relativenumber
-" Initialize Plugin Manager
 
+" Initialize Plugin Manager
 call plug#begin()
 
 " Plugin Definitions
@@ -12,6 +12,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'github/copilot.vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ThePrimeagen/vim-be-good'
+Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
 
 " End Plugin Initialization
 call plug#end()
@@ -26,6 +28,7 @@ set smarttab
 set autoindent
 set cursorline
 set showmatch
+
 " Airline Configuration
 colorscheme jellybeans
 set background=dark
@@ -84,3 +87,12 @@ nnoremap <C-t> :terminal<CR>
 " NERDTree Configuration
 let g:NERDTreeDirArrowExpandable="+" 
 let g:NERDTreeDirArrowCollapsible="~"
+
+" DadBod Configuration
+let g:db_ui_save_location = '~/.config/nvim/db_ui+_connections'
+" DBUI custom execute mapping
+nnoremap <C-e><C-e> :DBUIExecuteQuery<CR>
+
+" Clipboard Configuration
+set clipboard=unnamedplus
+
