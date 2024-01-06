@@ -14,6 +14,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ThePrimeagen/vim-be-good'
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
 " End Plugin Initialization
 call plug#end()
