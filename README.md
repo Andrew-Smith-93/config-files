@@ -1,6 +1,6 @@
 # config-files/NeoVim
 
-![Static Badge](https://img.shields.io/badge/Plugins_Installed-11-green?style=for-the-badge&logo=neovim)
+![Static Badge](https://img.shields.io/badge/Plugins_Installed-10-green?style=for-the-badge&logo=neovim)
 ![Static Badge](https://img.shields.io/badge/Plugin_Manager-Plugged-green?style=for-the-badge&logo=neovim)
 
 ## Install Instructions
