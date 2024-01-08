@@ -7,7 +7,6 @@ call plug#begin()
 
 " Plugin Definitions
 Plug 'preservim/nerdtree'
-Plug 'rafi/awesome-vim-colorschemes'
 Plug 'vim-airline/vim-airline'
 Plug 'github/copilot.vim'
 Plug 'vim-airline/vim-airline-themes'
@@ -33,11 +32,7 @@ set cursorline
 set showmatch
 
 " Airline Configuration
-colorscheme jellybeans
 set background=dark
-
-let g:airline_powerline_fonts = 1
-let g:airline_theme='jellybeans'
 
 " Transparent Background
 hi Normal guibg=NONE ctermbg=NONE
