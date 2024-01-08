@@ -1,8 +1,8 @@
 # config-files/NeoVim
 
-<a href="https://dotfyle.com/Andrew-Smith-93/config-files-neovim"><img src="https://dotfyle.com/Andrew-Smith-93/config-files-neovim/badges/plugins?style=flat" /></a>
-<a href="https://dotfyle.com/Andrew-Smith-93/config-files-neovim"><img src="https://dotfyle.com/Andrew-Smith-93/config-files-neovim/badges/leaderkey?style=flat" /></a>
-<a href="https://dotfyle.com/Andrew-Smith-93/config-files-neovim"><img src="https://dotfyle.com/Andrew-Smith-93/config-files-neovim/badges/plugin-manager?style=flat" /></a>
+<a href="https://dotfyle.com/Andrew-Smith-93/config-files-neovim"><img src="https://dotfyle.com/Andrew-Smith-93/config-files-neovim/badges/plugins?style=for-the-badge" /></a>
+<a href="https://dotfyle.com/Andrew-Smith-93/config-files-neovim"><img src="https://dotfyle.com/Andrew-Smith-93/config-files-neovim/badges/leaderkey?style=for-the-badge" /></a>
+<a href="https://dotfyle.com/Andrew-Smith-93/config-files-neovim"><img src="https://dotfyle.com/Andrew-Smith-93/config-files-neovim/badges/plugin-manager?style=for-the-badge" /></a>
 
 
 ## Install Instructions
