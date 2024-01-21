@@ -16,6 +16,8 @@ Plug 'kristijanhusak/vim-dadbod-ui'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " End Plugin Initialization
 call plug#end()
@@ -51,14 +53,12 @@ nnoremap <TAB> :NERDTreeToggle<CR>
 " noremap <Left> <Nop>
 " noremap <Right> <Nop>
 
-" Compile and Run Shortcut
-nnoremap <F5> :w<CR>:!g++ % -o %< && echo 'Compilation Successful'<CR>
 
 " Window Splitting Mappings
-nnoremap <F2> :split<CR>
-nnoremap <F3> :terminal<CR>
-noremap <F4> :tabnew<CR>
-nnoremap <F6> :vsplit<CR>
+nnoremap <F1> :Telescope find_files<CR>
+nnoremap <F2> :Telescope live_grep<CR>
+nnoremap <F3> :tabnew<CR>
+nnoremap <F4> :vsplit<CR>
 
 " Navigation in Splits
 nnoremap <Up> <C-W>k
@@ -93,4 +93,13 @@ nnoremap <C-e><C-e> :DBUIExecuteQuery<CR>
 
 " Clipboard Configuration
 set clipboard=unnamedplus
+
+" Set the leader key to comma
+let mapleader = ","
+
+" Telescope Mappings
+nnoremap <leader>fg :Telescope live_grep<CR>
+nnoremap <leader>fb :Telescope buffers<CR>
+nnoremap <leader>fh :Telescope help_tags<CR>
+
 
