@@ -18,6 +18,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 
 " End Plugin Initialization
 call plug#end()
@@ -30,7 +32,7 @@ set expandtab
 set smartindent
 set smarttab
 set autoindent
-set cursorline
+set nocursorline
 set showmatch
 
 " Airline Configuration
@@ -53,6 +55,9 @@ nnoremap <TAB> :NERDTreeToggle<CR>
 " noremap <Left> <Nop>
 " noremap <Right> <Nop>
 
+" Markdown Preview Settings & Mappings
+let g:mkdp_auto_start = 1
+nnoremap <F9> :MarkdownPreview<CR>
 
 " Window Splitting Mappings
 nnoremap <F1> :Telescope find_files<CR>
@@ -91,11 +96,30 @@ let g:db_ui_save_location = '~/.config/nvim/db_ui+_connections'
 " DBUI custom execute mapping
 nnoremap <C-e><C-e> :DBUIExecuteQuery<CR>
 
-" Clipboard Configuration
-set clipboard=unnamedplus
+" Set up clipboard using xclip
+if has('nvim')
+  let g:clipboard = {
+    \   'name': 'xclip',
+    \   'copy': {
+    \      '+': 'xclip -selection clipboard',
+    \      '*': 'xclip -selection clipboard',
+    \    },
+    \   'paste': {
+    \      '+': 'xclip -selection clipboard -o',
+    \      '*': 'xclip -selection clipboard -o',
+    \   },
+    \   'cache_enabled': 0,
+    \ }
+endif
 
 " Set the leader key to comma
 let mapleader = ","
+
+" Completeion Settings
+inoremap <silent><expr> <C-Space> coc#refresh()
+inoremap <silent><expr> <CR>      coc#_select_confirm()
+inoremap <silent><expr> <C-k> coc#pum#visible() ? coc#pum#prev(1) : "\<C-k>"
+inoremap <silent><expr> <C-j> coc#pum#visible() ? coc#pum#next(1) : "\<C-j>"
 
 " Telescope Mappings
 nnoremap <leader>fg :Telescope live_grep<CR>
