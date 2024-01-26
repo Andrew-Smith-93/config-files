@@ -21,8 +21,6 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 Plug 'neovim/nvim-lspconfig'
-Plug 'stevearc/dressing.nvim'
-Plug 'akinsho/flutter-tools.nvim'
 
 " End Plugin Initialization
 call plug#end()
@@ -130,9 +128,4 @@ nnoremap <leader>fg :Telescope live_grep<CR>
 nnoremap <leader>fb :Telescope buffers<CR>
 nnoremap <leader>fh :Telescope help_tags<CR>
 
-" Flutter Tools Setup
-lua << EOF
-print("Setting up Flutter tools")
-require("flutter-tools").setup{}
-EOF
 
