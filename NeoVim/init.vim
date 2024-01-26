@@ -20,6 +20,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
+Plug 'neovim/nvim-lspconfig'
 
 " End Plugin Initialization
 call plug#end()
@@ -37,6 +38,7 @@ set showmatch
 
 " Airline Configuration
 set background=dark
+:let g:airline_theme='kolor'
 
 " Transparent Background
 hi Normal guibg=NONE ctermbg=NONE
@@ -117,7 +119,7 @@ let mapleader = ","
 
 " Completeion Settings
 inoremap <silent><expr> <C-Space> coc#refresh()
-inoremap <silent><expr> <CR>      coc#_select_confirm()
+inoremap <expr> <CR> pumvisible() ? coc#_select_confirm() : "\<CR>"
 inoremap <silent><expr> <C-k> coc#pum#visible() ? coc#pum#prev(1) : "\<C-k>"
 inoremap <silent><expr> <C-j> coc#pum#visible() ? coc#pum#next(1) : "\<C-j>"
 
