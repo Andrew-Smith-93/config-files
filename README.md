@@ -3,7 +3,7 @@
 ![Static Badge](https://img.shields.io/badge/Plugins_Installed-10-green?style=for-the-badge&logo=neovim)
 ![Static Badge](https://img.shields.io/badge/Plugin_Manager-Plugged-green?style=for-the-badge&logo=neovim)
 
-![image](https://github.com/Andrew-Smith-93/config-files/assets/137859776/de2bcab8-db3c-4f6e-8b12-f6c0b6335ac2)
+![image](https://github.com/Andrew-Smith-93/config-files/assets/137859776/91554e5b-2ebe-4518-8374-bf2814aadfb9)
 
 
 ## Install Instructions
